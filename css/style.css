@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
 * {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -11,12 +13,89 @@
 /** Navbar **/
 .navbar a {
     /* font-size: 14px; */
-    font-weight: 500;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-/* .navbar-toggler {
-    padding: 1px 5px;
-    font-size: 18px;
-    line-height: 0.3;
-    background: #fff;
-} */
+
+/** Hero/Header **/
+.w-100-height {
+    height: 90vh;
+    width: 100%;
+}
+
+.carousel-item {
+    min-height: 300px;
+}
+
+.carousel-caption {
+    text-align: left;
+    margin-bottom: 200px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.carousel-caption p {
+    width: 60%;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: left;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.icon {
+    font-size: 40px;
+    font-weight: 700;
+    background: transparent;
+    border: 1px solid #ffffff74;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    line-height: 1.8;
+}
+
+
+/** Media Queries **/
+@media (max-width: 767px) {
+    /* Navbar */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    /* Header/Hero Section */
+    .carousel-caption h5{
+        font-size: 50px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    .carousel-caption p {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 630px) {
+    /* Header/Hero Section */
+    .carousel-caption h5 {
+        font-size: 40px;
+        padding: 10px 15px;
+    }
+}
