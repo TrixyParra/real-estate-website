@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* https://www.youtube.com/watch?v=6QSsijzmR6c */
 
 * {
     font-family: "Montserrat", sans-serif;
@@ -119,5 +120,19 @@
     .carousel-caption h5 {
         font-size: 40px;
         padding: 10px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Contact Section */
+    .contact-map {
+        width: 475px;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Contact Section */
+    .contact-map {
+        width: 400px;
     }
 }
