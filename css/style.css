@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
 * {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -69,6 +68,29 @@
     height: 80px;
     width: 80px;
     line-height: 1.8;
+}
+
+
+/** Popular Section **/
+.card img {
+    height: 210px;
+}
+
+.arrow-icon {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+/** Footer **/
+.bg-footer {
+    background-color: #000;
+    padding: 50px 0 30px;
+}
+
+.bg-footer a {
+    text-decoration: none;
+    color: #b5b5b5;
 }
 
 
